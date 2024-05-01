@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
-from djaongo.contrib.messages import constants as messages
+from django.contrib.messages import constants as messages
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
@@ -148,7 +148,7 @@ USE_TZ = True
 
 MESSAGES_TAGS = {
     messages.SUCCESS: 'alert-success',
-    messages.Error: 'alert-danger',
+    messages.ERROR: 'alert-danger',
 }
 
 
